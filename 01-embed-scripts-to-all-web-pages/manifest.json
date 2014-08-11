@@ -1,0 +1,27 @@
+{
+  "name": "Example 1: Embed Scripts to All Web Pages",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This is an example to embed scripts to all web pages",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "embeded-script.js"
+  ],
+  "permissions": [
+    "<all_urls>"
+  ]
+}
