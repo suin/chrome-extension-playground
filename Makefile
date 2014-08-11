@@ -6,3 +6,6 @@ fmt:
 
 	$(json) < 01-embed-scripts-to-all-web-pages/manifest.json > /tmp/json
 	mv /tmp/json 01-embed-scripts-to-all-web-pages/manifest.json
+
+	$(json) < 02-take-a-screenshot/manifest.json > /tmp/json
+	mv /tmp/json 02-take-a-screenshot/manifest.json
